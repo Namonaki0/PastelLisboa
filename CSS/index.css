@@ -1,0 +1,422 @@
+.width-container {
+  display: none;
+}
+
+.display-width {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #eeeeee;
+  padding: .3em;
+  font-size: .85em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  background: #A7253F;
+  height: 100vh;
+}
+
+@media (min-width: 840px) {
+  body {
+    background: #D5D8EB;
+    padding: 0 1em;
+  }
+}
+
+body .overall-wrapper {
+  background: white;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+body .overall-wrapper header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1em;
+  background: white;
+  background: url(../Images/pasteis.jpeg);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+body .overall-wrapper header .logo {
+  font-family: 'Lobster', sans-serif;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  padding: .8em;
+  text-shadow: 2px 1px 1px #A7253F;
+}
+
+@media (min-width: 840px) {
+  body .overall-wrapper header .logo {
+    font-size: 6em;
+  }
+}
+
+body .overall-wrapper header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 0;
+  padding: 1em;
+  background: #A7253F;
+}
+
+body .overall-wrapper header nav ul a:hover,
+body .overall-wrapper header nav ul a:focus {
+  -webkit-transition: all 120ms ease-in-out;
+  transition: all 120ms ease-in-out;
+}
+
+@media (min-width: 840px) {
+  body .overall-wrapper header nav ul {
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 840px) {
+  body .overall-wrapper header nav ul li {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  body .overall-wrapper header nav ul li:hover {
+    color: #A7253F;
+    cursor: pointer;
+  }
+  body .overall-wrapper header nav ul li:hover:hover,
+  body .overall-wrapper header nav ul li:hover a {
+    color: #A7253F;
+  }
+}
+
+body .overall-wrapper header nav ul a {
+  color: black;
+  font-weight: 700;
+  padding: 1em 1.2em;
+  color: white;
+  margin: 0 .5px;
+  width: 100%;
+}
+
+body .overall-wrapper header nav ul a i {
+  font-size: 1.1em;
+}
+
+body .overall-wrapper header nav ul a i:focus {
+  outline: none;
+}
+
+body .overall-wrapper header nav ul a span {
+  font-family: "Montserrat", sans-serif;
+  visibility: hidden;
+  position: absolute;
+}
+
+@media (min-width: 840px) {
+  body .overall-wrapper header nav ul a span {
+    visibility: unset;
+    margin-left: .5em;
+    position: relative;
+  }
+}
+
+body .overall-wrapper header nav ul a:hover {
+  background: white;
+  color: #A7253F;
+}
+
+body .overall-wrapper header nav ul a .active {
+  background: white;
+  color: black;
+}
+
+body .overall-wrapper .main {
+  line-height: 1.3em;
+  padding: 1.5em 1.5em;
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 840px) {
+  body .overall-wrapper .main {
+    padding: 2em 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body .overall-wrapper .main .design {
+  display: none;
+  position: absolute;
+}
+
+@media (min-width: 840px) {
+  body .overall-wrapper .main .design {
+    padding: 2em 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: block;
+    width: 40%;
+    margin-left: 2em;
+    opacity: .2;
+    position: relative;
+    background: #A7253F;
+  }
+}
+
+body .overall-wrapper .main .left {
+  position: relative;
+  margin-bottom: 2.5em;
+}
+
+@media (min-width: 840px) {
+  body .overall-wrapper .main .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+body .overall-wrapper .main .left h1 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 840px) {
+  body .overall-wrapper .main .left h1 {
+    font-size: 3em;
+  }
+}
+
+body .overall-wrapper .main .left p {
+  margin-top: 1em;
+}
+
+body .overall-wrapper .main .left .span-picture {
+  height: 180px;
+  display: block;
+  background: url(../Images/bolodearroz.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body .overall-wrapper .main .left .rect {
+  display: block;
+  height: 130px;
+  width: 25px;
+  background: #A7253F;
+  opacity: .3;
+  position: absolute;
+  top: 45%;
+  left: 5px;
+}
+
+body .overall-wrapper .main .left .squ {
+  display: block;
+  height: 130px;
+  width: 130px;
+  background: #A7253F;
+  opacity: .3;
+  position: absolute;
+  top: 58%;
+  left: -10px;
+}
+
+body .overall-wrapper .main .right {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 840px) {
+  body .overall-wrapper .main .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 840px) {
+  body .overall-wrapper .main .right .design-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 40%;
+    padding: 2em 5em;
+    display: block;
+    position: relative;
+    margin-right: 2em;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 840px) {
+  body .overall-wrapper .main .right .article-second {
+    width: 40%;
+  }
+}
+
+body .overall-wrapper .main .right h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body .overall-wrapper .main .right p {
+  margin-top: 1em;
+}
+
+body .overall-wrapper .main .right .span-picture {
+  height: 180px;
+  display: block;
+  background: url(../Images/oldshop.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1000;
+}
+
+body .overall-wrapper .main .right .rect {
+  display: block;
+  height: 23px;
+  width: 220px;
+  background: #A7253F;
+  opacity: .4;
+  position: absolute;
+  top: 95%;
+  right: 5px;
+}
+
+body .overall-wrapper .main .right .squ {
+  display: block;
+  height: 170px;
+  width: 180px;
+  background: #A7253F;
+  opacity: .2;
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  z-index: 1;
+}
+
+body .overall-wrapper .main .span-picture {
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+body .overall-wrapper footer {
+  padding: 2em 0;
+  background: #A7253F;
+  text-align: center;
+  color: white;
+}
+
+body .overall-wrapper footer .footer-logo {
+  font-family: 'Lobster', sans-serif;
+  font-size: 2.2em;
+  color: white;
+  text-align: center;
+  margin: 0;
+  text-align: center;
+}
+
+body .overall-wrapper footer .sitemap {
+  margin-top: 3em;
+}
+
+body .overall-wrapper footer .sitemap a {
+  font-size: .9em;
+  border-right: 2px solid white;
+  padding-right: 1em;
+  padding-left: 1em;
+  color: white;
+}
+
+body .overall-wrapper footer .sitemap a:last-child {
+  border: none;
+}
+
+body .overall-wrapper footer .copyright {
+  margin: 2em 0;
+  font-size: .8em;
+}
+
+body .overall-wrapper footer .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+body .overall-wrapper footer .social-list i {
+  font-size: 1.8em;
+  color: white;
+}
+
+body ul {
+  list-style-type: none;
+}
+
+body a, body i {
+  text-decoration: none;
+}
+
+body a:focus {
+  border: none;
+}
+
+body .pseudo::after {
+  content: "";
+  background: #A7253F;
+  height: 3px;
+  display: block;
+  width: 100%;
+  margin-top: .3em;
+  right: 10px;
+}
+
+@media (min-width: 700px) {
+  body .pseudo::after {
+    height: 5px;
+  }
+}
+
+@media (min-width: 840px) {
+  body p {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin-bottom: 1.8em;
+  }
+}
+/*# sourceMappingURL=index.css.map */

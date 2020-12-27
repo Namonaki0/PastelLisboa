@@ -1,0 +1,117 @@
+$deepRed: #A7253F;
+$bgClr: #D5D8EB;
+$bodyFont: 'Montserrat',
+sans-serif;
+$mediumScr: 800px;
+$bigScr: 1000px;
+
+
+.social-main {
+
+    h1 {
+        padding: 1rem;
+    }
+
+    @media(min-width: $mediumScr) {
+        padding: 2rem 0;
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media(min-width: $bigScr) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .pseudo {
+        margin: 0 0 1.2em;
+
+        @media(min-width: $bigScr) {
+            grid-column: 1 / -1;
+            font-size: 2.5rem;
+            padding: 1.5rem;
+        }
+    }
+
+    .social-media-banner {
+        max-width: 90%;
+        margin: auto;
+        margin-bottom: 1em;
+        display: grid;
+        grid-template-columns: 1fr repeat(3, 2fr);
+        box-shadow: 0 0 1px rgba(0,0,0,.5);
+        border-radius: 3px;
+
+        a {
+            min-width: 100%;
+        }
+
+        @media(min-width: $mediumScr) {
+            min-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media(min-width: $bigScr) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .fab {
+            color: white;
+            cursor: pointer;
+            background: $deepRed;
+            padding: 1.2rem;
+            font-size: 1.5rem;
+            margin-bottom: 0;
+            align-self: center;
+            max-width: 25px;
+            grid-column: 1 / 2;
+            text-align: center;
+            border-top-left-radius: 3px;
+            transition: all 100ms ease-in-out;
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.904);
+            }
+
+            @media(min-width: $mediumScr) {
+                font-size: 2rem;
+                margin-right: .5rem;
+            }
+
+        }
+
+        p {
+            grid-column: 2 / -1;
+            font-size: .8em;
+            margin: 0;
+            padding: 0;
+            max-width: 90%;
+            display: flex;
+            align-self: center;
+            margin-left: 1.5rem;
+
+            @media(min-width: $mediumScr) {
+                max-width: 80%;
+            }
+
+            @media(min-width: $bigScr) {
+                margin-left: 1.5rem;
+                max-width: 90%;
+            }
+        }
+
+        span {
+            background: #838CC3;
+            display: block;
+            height: 25px;
+            grid-column: 1 / -1;
+            margin-top: 0;
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+    }
+}

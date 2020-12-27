@@ -1,0 +1,76 @@
+.menu-overall-wrapper {
+  padding: 1.5em 1.5em;
+}
+
+@media (min-width: 600px) {
+  .menu-overall-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 1.5em 1.5em;
+    grid-gap: 10px;
+  }
+}
+
+@media (min-width: 950px) {
+  .menu-overall-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    padding: 1.5em 1.5em;
+    grid-gap: 10px;
+  }
+}
+
+.menu-overall-wrapper h1 {
+  margin: 0 0 1.2em;
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 800px) {
+  .menu-overall-wrapper h1 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+  }
+}
+
+.menu-overall-wrapper .cake-description {
+  padding: .5em;
+  margin-bottom: 1em;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.menu-overall-wrapper .cake-description img {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.menu-overall-wrapper .cake-description span {
+  margin-top: -5px;
+  margin-bottom: 0;
+  background: #838CC3;
+  padding: .8em;
+  display: block;
+  font-size: 1.2em;
+  color: white;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.menu-overall-wrapper .cake-description,
+.menu-overall-wrapper img {
+  border-radius: 3px;
+}
+
+.cake-picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  height: 300px;
+  width: 100%;
+}
+/*# sourceMappingURL=menu.css.map */

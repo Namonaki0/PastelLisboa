@@ -1,0 +1,418 @@
+$deepRed: #A7253F;
+$bgClr: #D5D8EB;
+$bodyFont: 'Montserrat', sans-serif;
+$mediumScr: 840px;
+$bigScr: 1000px;
+
+
+//? VIEWPORT MEASURE
+
+.width-container {
+    display: none;
+}
+
+.display-width {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #eeeeee;
+    padding: .3em;
+    font-size: .85em;
+}
+
+//? -------------------------------
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: $bodyFont;
+    background: $deepRed;    
+    height: 100vh;
+    
+
+    @media (min-width: $mediumScr) {
+        background: $bgClr;
+        padding: 0 1em;
+        
+    }
+
+    .overall-wrapper {
+        background: white;
+        box-shadow: 0 0 1px rgba(0,0,0,.2);
+
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+        background: white;
+        background: url(../Images/pasteis.jpeg);
+        background-blend-mode: multiply;
+        background-position: center; 
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+
+        .logo {
+            font-family: 'Lobster', sans-serif;
+            font-size: 3em;
+            color: white;
+            text-align: center;
+            padding: .8em;
+            text-shadow: 2px 1px 1px $deepRed;
+
+            @media (min-width: $mediumScr) {
+                font-size: 6em;
+            }
+        }
+
+       
+        nav {
+
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 0;
+                padding: 1em;
+                background: $deepRed;
+
+                a:hover,
+                a:focus {
+                    transition: all 120ms ease-in-out;
+                }
+
+                @media(min-width: $mediumScr) {
+                    margin: 0;
+                    align-items: center;
+                }
+
+                li {
+
+                    @media(min-width: $mediumScr) {
+                        align-self: center;
+
+                        &:hover {
+                            color: $deepRed;
+                            cursor: pointer;
+
+                            &:hover,
+                            a {
+                                color: $deepRed;
+                            }
+                        }
+
+                        
+                    }
+                    
+                }
+                
+                
+                a {
+                    color: black;
+                    font-weight: 700;
+                    padding: 1em 1.2em;
+                    color: white;
+                    margin: 0 .5px;
+                    width: 100%;
+
+                    @media(min-width: $mediumScr) {
+                        // padding: 1.2em 1.5em;
+                        
+                    }
+
+                    i {
+                        font-size: 1.1em;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    span {
+                        font-family: $bodyFont;
+                        visibility: hidden;
+                        position: absolute;
+
+                        @media(min-width: $mediumScr) {
+                            visibility: unset;
+                            margin-left: .5em;
+                            position: relative;
+                }
+                    }
+
+                    &:hover {
+                        background: white;
+                        color: $deepRed;  
+                        
+                        @media(min-width: $mediumScr) {
+                            
+                }
+            }
+
+                .active {
+                    background: white;
+                    color: black;
+                }
+            }
+        }
+
+    }
+    }
+    
+
+.main {
+    line-height: 1.3em;
+    padding: 1.5em 1.5em;
+    margin-bottom: 1.5em;
+
+    @media (min-width: $mediumScr) {
+        padding: 2em 5em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .design {
+        display: none;
+        position: absolute;
+
+        @media (min-width: $mediumScr) {
+            padding: 2em 5em;
+            display: flex;
+            display: block;
+            width: 40%;
+            margin-left: 2em;
+            opacity: .2;
+            position: relative;
+            background: $deepRed;
+
+        }
+    }
+
+    .left {
+        position: relative;
+        margin-bottom: 2.5em;
+
+        @media (min-width: $mediumScr) {
+            display: flex;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 0;
+            margin-bottom: 0;
+
+            @media (min-width: $mediumScr) {
+                font-size: 3em;
+            }
+        }
+
+        p {
+            margin-top: 1em;
+        }
+
+        .span-picture {
+            height: 180px;
+            display: block;
+            background: url(../Images/bolodearroz.png) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .rect {
+            display: block;
+            height: 130px;
+            width: 25px;
+            background: $deepRed;
+            opacity: .3;
+            position: absolute;
+            top: 45%;
+            left: 5px;
+        }
+
+        .squ {
+            display: block;
+            height: 130px;
+            width: 130px;
+            background: $deepRed;
+            opacity: .3;
+            position: absolute;
+            top: 58%;
+            left: -10px;
+        }
+
+    }
+
+    .right {
+        position: relative;
+        width: 100%;
+        
+        @media (min-width: $mediumScr) {
+                display: flex;
+            }
+
+        .design-bottom {
+
+            @media (min-width: $mediumScr) {
+                display: flex;
+                flex-direction: row;
+                width: 40%;
+                padding: 2em 5em;
+                display: block;
+                position: relative;
+                margin-right: 2em;
+                margin-left: 0;
+            }
+        }
+
+        .article-second {
+            @media (min-width: $mediumScr) {
+                width: 40%;
+            }
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-top: 1em;
+        }
+
+        .span-picture {
+            height: 180px;
+            display: block;
+            background: url(../Images/oldshop.jpeg) no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: 1000;
+        }
+
+        .rect {
+            display: block;
+            height: 23px;
+            width: 220px;
+            background: $deepRed;
+            opacity: .4;
+            position: absolute;
+            top: 95%;
+            right: 5px;
+        }
+
+        .squ {
+            display: block;
+            height: 170px;
+            width: 180px;
+            background: $deepRed;
+            opacity: .2;
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            z-index: 1;
+        }
+    }
+
+    
+    .span-picture {
+        box-shadow: 0 0 1px rgba(0,0,0,.5);
+    }
+    
+  
+}
+
+   
+
+    footer {
+        padding: 2em 0;
+        background: $deepRed;
+        text-align: center;
+        color: white;
+
+        .footer-logo {
+            font-family: 'Lobster', sans-serif;
+            font-size: 2.2em;
+            color: white;
+            text-align: center;
+            margin: 0;
+            text-align: center;
+        }
+
+        .sitemap {
+            margin-top: 3em;
+
+            a {
+                font-size: .9em;
+                border-right: 2px solid white;
+                padding-right: 1em;
+                padding-left: 1em;
+                color: white;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+
+        .copyright {
+            margin: 2em 0;
+            font-size: .8em;
+        }
+
+        .social-list {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+
+            i {
+                font-size: 1.8em;
+                color: white;
+            }
+        }
+    }
+
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a, i {
+    text-decoration: none;
+}
+
+a:focus {
+    border: none;
+}
+
+.pseudo {
+
+     &::after {
+            content:"";
+            background: $deepRed;
+            height: 3px;
+            display: block;
+            width: 100%;
+            margin-top: .3em;
+            right: 10px;
+
+            @media(min-width: 700px){
+                height: 5px;
+            }
+        }
+}
+
+
+p {
+    @media (min-width: $mediumScr) {
+                font-size: 1.2em;
+                line-height: 1.3em;
+                margin-bottom: 1.8em;
+            }
+}
+
+
+}
+
+
